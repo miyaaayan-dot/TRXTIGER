@@ -1,0 +1,416 @@
+/* ===========================
+   TRXTIGER Website CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0d;
+    color:#fff;
+    line-height:1.7;
+}
+
+/* Header */
+
+header{
+
+    width:100%;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    color:#ffb300;
+    font-size:28px;
+    font-weight:800;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:28px;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ffb300;
+
+}
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:140px 8% 80px;
+
+    gap:50px;
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-left h1{
+
+    font-size:70px;
+    color:#ffb300;
+
+}
+
+.hero-left h2{
+
+    margin-top:15px;
+    font-size:30px;
+
+}
+
+.hero-left p{
+
+    margin-top:25px;
+    color:#cccccc;
+    max-width:650px;
+
+}
+
+.hero-right{
+
+    flex:1;
+    text-align:center;
+
+}
+
+.hero-right img{
+
+    width:380px;
+    max-width:100%;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+
+}
+
+/* Buttons */
+
+.buttons{
+
+margin-top:40px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 30px;
+
+background:#ffb300;
+
+color:#000;
+
+font-weight:700;
+
+text-decoration:none;
+
+border-radius:40px;
+
+margin-right:15px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.btn-outline{
+
+display:inline-block;
+
+padding:15px 30px;
+
+border:2px solid #ffb300;
+
+border-radius:40px;
+
+text-decoration:none;
+
+color:#ffb300;
+
+transition:.3s;
+
+}
+
+.btn-outline:hover{
+
+background:#ffb300;
+
+color:#000;
+
+}
+
+/* Sections */
+
+section{
+
+padding:90px 8%;
+
+}
+
+section h2{
+
+font-size:42px;
+
+margin-bottom:25px;
+
+color:#ffb300;
+
+}
+
+/* Cards */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:#151518;
+
+padding:35px;
+
+border-radius:20px;
+
+border:1px solid #222;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+border-color:#ffb300;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+/* Contract */
+
+.contract-box{
+
+background:#151518;
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+border:1px solid #222;
+
+}
+
+#address{
+
+word-break:break-all;
+
+font-size:18px;
+
+margin-bottom:20px;
+
+color:#ffb300;
+
+}
+
+.contract-box button{
+
+padding:14px 30px;
+
+background:#ffb300;
+
+border:none;
+
+border-radius:40px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.contract-box button:hover{
+
+transform:scale(1.05);
+
+}
+
+/* FAQ */
+
+.faq h3{
+
+margin-top:25px;
+
+color:#ffb300;
+
+}
+
+.faq p{
+
+margin-top:10px;
+
+color:#ddd;
+
+}
+
+/* Footer */
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+background:#111;
+
+color:#999;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ffb300;
+
+border-radius:10px;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding-top:170px;
+
+}
+
+.hero-left h1{
+
+font-size:52px;
+
+}
+
+.hero-left h2{
+
+font-size:24px;
+
+}
+
+.hero-right img{
+
+width:260px;
+
+}
+
+.buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+align-items:center;
+
+}
+
+.btn{
+
+margin-right:0;
+
+}
+
+}
+
